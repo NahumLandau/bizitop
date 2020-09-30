@@ -10,6 +10,17 @@
     />
     <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 700px)"
+      href="./css/mobile.css"
+    />
+
+    <!-- Font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <!-- LightBox -->
     <link rel="stylesheet" href="./css/lightbox.css" />
     <title>BiziTop</title>
@@ -17,7 +28,7 @@
   <body>
     <nav class="navbar">
       <a href="#home"><img src="./img/bizilogo.jpeg" alt="logo" /></a>
-      <ul>
+      <ul class="wide">
         <li><a href="#home" class="pink-link">בית</a></li>
         <li>
           <a href="#about" class="green-link" class="dark-orange-link">אודות</a>
@@ -25,6 +36,26 @@
         <li><a href="#products" class="dark-orange-link">מוצרים</a></li>
         <li><a href="#contact" class="orange-link">צור קשר</a></li>
       </ul>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#home" class="pink-link">בית</a></li>
+                <li>
+                  <a href="#about" class="green-link" class="dark-orange-link"
+                    >אודות</a
+                  >
+                </li>
+                <li><a href="#products" class="dark-orange-link">מוצרים</a></li>
+                <li><a href="#contact" class="orange-link">צור קשר</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Home -->
@@ -40,109 +71,128 @@
 
     <!-- About -->
     <section id="about">
-      <h2>אודותינו</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        officiis eaque dignissimos suscipit nulla? Laboriosam necessitatibus
-        nisi incidunt delectus quam eos non totam dolore dolores voluptates,
-        repellat expedita recusandae fugit temporibus, repellendus aliquid nobis
-        omnis ipsum voluptatibus quaerat unde eum!
-      </p>
+      <div class="container">
+        <h2>אודותינו</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          officiis eaque dignissimos suscipit nulla? Laboriosam necessitatibus
+          nisi incidunt delectus quam eos non totam dolore dolores voluptates,
+          repellat expedita recusandae fugit temporibus, repellendus aliquid
+          nobis omnis ipsum voluptatibus quaerat unde eum!
+        </p>
+      </div>
     </section>
 
+    <!-- Products -->
     <section id="products">
-      <h2>המוצרים שלנו</h2>
+      <div class="container">
+        <h2>המוצרים שלנו</h2>
 
-      <div class="flex-container">
-        <!-- Jada -->
-        <div class="company">
-          <div class="comp-logo">
-            <a href="img/jada-1.jpeg" data-lightbox="jada">
-              <img src="./img/jada.png" alt="" />
-            </a>
-            <a href="img/jada-2.jpeg" data-lightbox="jada" class="hidden">
-              <img src="img/jada-2.jpeg" alt="" />
-            </a>
-            <a href="img/jada-3.jpeg" data-lightbox="jada" class="hidden">
-              <img src="img/jada-3.jpeg" alt="" />
-            </a>
+        <div class="flex-container">
+          <!-- Jada -->
+          <div class="company">
+            <div class="comp-logo">
+              <a href="img/jada-1.jpeg" data-lightbox="jada">
+                <img src="./img/jada.png" alt="" />
+              </a>
+              <a href="img/jada-2.jpeg" data-lightbox="jada" class="hidden">
+                <img src="img/jada-2.jpeg" alt="" />
+              </a>
+              <a href="img/jada-3.jpeg" data-lightbox="jada" class="hidden">
+                <img src="img/jada-3.jpeg" alt="" />
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Sambro -->
-        <div class="company">
-          <div class="comp-logo">
-            <a href="img/sambro-1.jpeg" data-lightbox="sambro">
-              <img src="./img/sambro.png" alt="" />
-            </a>
-            <a href="img/sambro-2.jpeg" data-lightbox="sambro" class="hidden">
-              <img src="img/sambro-2.jpeg" alt="" />
-            </a>
-            <a href="img/sambro-3.jpeg" data-lightbox="sambro" class="hidden">
-              <img src="img/sambro-3.jpeg" alt="" />
-            </a>
+          <!-- Sambro -->
+          <div class="company">
+            <div class="comp-logo">
+              <a href="img/sambro-1.jpeg" data-lightbox="sambro">
+                <img src="./img/sambro.png" alt="" />
+              </a>
+              <a href="img/sambro-2.jpeg" data-lightbox="sambro" class="hidden">
+                <img src="img/sambro-2.jpeg" alt="" />
+              </a>
+              <a href="img/sambro-3.jpeg" data-lightbox="sambro" class="hidden">
+                <img src="img/sambro-3.jpeg" alt="" />
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Niggun -->
-        <div class="company">
-          <div class="comp-logo">
-            <a href="img/niggun-1.jpeg" data-lightbox="niggun">
-              <img src="img/niggun_toys.jpg" alt="" />
-            </a>
-            <a href="img/niggun-2.jpeg" data-lightbox="niggun" class="hidden">
-              <img src="img/niggun-2.jpeg" alt="" />
-            </a>
-            <a href="img/niggun-3.jpeg" data-lightbox="niggun" class="hidden">
-              <img src="img/niggun-3.jpeg" alt="" />
-            </a>
+          <!-- Rubiks -->
+          <div class="company">
+            <div class="comp-logo">
+              <a href="img/rubiks-1.jpeg" data-lightbox="rubiks">
+                <img src="img/rubiks-logo.png" alt="" />
+              </a>
+              <a href="img/rubiks-2.jpeg" data-lightbox="rubiks" class="hidden">
+                <img src="img/rubiks-2.jpeg" alt="" />
+              </a>
+              <a href="img/rubiks-3.jpeg" data-lightbox="rubiks" class="hidden">
+                <img src="img/rubiks-3.jpeg" alt="" />
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Rubiks -->
-        <div class="company">
-          <div class="comp-logo">
-            <a href="img/rubiks-1.jpeg" data-lightbox="rubiks">
-              <img src="img/rubiks-logo.png" alt="" />
-            </a>
-            <a href="img/rubiks-2.jpeg" data-lightbox="rubiks" class="hidden">
-              <img src="img/rubiks-2.jpeg" alt="" />
-            </a>
-            <a href="img/rubiks-3.jpeg" data-lightbox="rubiks" class="hidden">
-              <img src="img/rubiks-3.jpeg" alt="" />
-            </a>
+          <!-- Niggun -->
+          <div class="company">
+            <div class="comp-logo">
+              <a href="img/niggun-1.jpeg" data-lightbox="niggun">
+                <img src="img/niggun_toys.jpg" alt="" />
+              </a>
+              <a href="img/niggun-2.jpeg" data-lightbox="niggun" class="hidden">
+                <img src="img/niggun-2.jpeg" alt="" />
+              </a>
+              <a href="img/niggun-3.jpeg" data-lightbox="niggun" class="hidden">
+                <img src="img/niggun-3.jpeg" alt="" />
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Bizi-Baby -->
-        <div class="company">
-          <div class="comp-logo">
-            <a href="img/bizi-baby-1.jpeg" data-lightbox="bizi">
-              <img src="img/bizi-baby-logo.png" alt="" />
-            </a>
-            <a href="img/bizi-baby-2.jpeg" data-lightbox="bizi" class="hidden">
-              <img src="img/bizi-baby-2.jpeg" alt="" />
-            </a>
-            <a href="img/bizi-baby-3.jpeg" data-lightbox="bizi" class="hidden">
-              <img src="img/bizi-baby-3.jpeg" alt="" />
-            </a>
+          <!-- Bizi-Baby -->
+          <div class="company">
+            <div class="comp-logo">
+              <a href="img/bizi-baby-1.jpeg" data-lightbox="bizi">
+                <img src="img/bizi-baby-logo.png" alt="" />
+              </a>
+              <a
+                href="img/bizi-baby-2.jpeg"
+                data-lightbox="bizi"
+                class="hidden"
+              >
+                <img src="img/bizi-baby-2.jpeg" alt="" />
+              </a>
+              <a
+                href="img/bizi-baby-3.jpeg"
+                data-lightbox="bizi"
+                class="hidden"
+              >
+                <img src="img/bizi-baby-3.jpeg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-      <h2>צור קשר</h2>
-      <div class="contact-info">
-        <p>office@bizitop.com <i class="fas fa-envelope-open"></i></p>
-        <p>03-3050777 <i class="fas fa-phone"></i></p>
-        <p>האלה 10 מושב בן זכאי <i class="fas fa-map-marker-alt"></i></p>
+      <div class="container">
+        <h2>צור קשר</h2>
+        <div class="contact-info">
+          <p>office@bizitop.com <i class="fas fa-envelope-open"></i></p>
+          <p>03-3050777 <i class="fas fa-phone"></i></p>
+          <p>האלה 10 מושב בן זכאי <i class="fas fa-map-marker-alt"></i></p>
+        </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <p class="copyright"></p>
-      <p>Website was made by Vladimir Slovo</p>
+      <div class="container">
+        <p class="copyright"></p>
+        <p>Website was made by Vladimir Slovo</p>
+      </div>
     </footer>
 
     <!-- Scripts -->

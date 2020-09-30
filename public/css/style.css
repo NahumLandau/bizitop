@@ -28,6 +28,11 @@ ul {
   list-style: none;
 }
 
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
 /* Utilities */
 a.pink-link:hover,
 .pink {
@@ -60,6 +65,10 @@ a.orange-link:hover,
   opacity: 0.5;
 }
 
+.container {
+  max-width: 1000px;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -87,6 +96,10 @@ a.orange-link:hover,
   margin: 0 1rem;
 }
 
+.navbar .menu-wrap {
+  display: none;
+}
+
 /* Home */
 #home {
   background: var(--light-gray);
@@ -99,7 +112,6 @@ a.orange-link:hover,
 }
 
 #home h1 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 7rem;
   visibility: hidden;
   margin-bottom: 1rem;
@@ -115,20 +127,20 @@ a.orange-link:hover,
 }
 
 #home .pink {
-  animation: animate1 1.5s forwards 0.5s ease-in;
+  animation: animate1 1.2s forwards 0.5s ease-in;
 }
 #home .green {
-  animation: animate1 1.5s forwards 1s ease-in;
+  animation: animate1 1.2s forwards 1s ease-in;
 }
 #home .dark-orange {
-  animation: animate1 1.5s forwards 1.5s ease-in;
+  animation: animate1 1.2s forwards 1.5s ease-in;
 }
 #home .orange {
-  animation: animate1 1.5s forwards 2s ease-in;
+  animation: animate1 1.2s forwards 2s ease-in;
 }
 
 #home .top {
-  animation: animate1 1.5s forwards 2.5s ease-in;
+  animation: animate1 1.2s forwards 2.5s ease-in;
 }
 
 #home p {
@@ -162,12 +174,13 @@ a.orange-link:hover,
 
 /* About */
 #about {
-  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 3rem;
+  background: #ccf6c8;
 }
 
 /* Products */
@@ -177,7 +190,8 @@ a.orange-link:hover,
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: var(--blue);
+  padding: 3rem 1rem;
+  background: #fff;
 }
 
 .flex-container {
@@ -185,9 +199,8 @@ a.orange-link:hover,
   flex-wrap: wrap;
 }
 .company {
-  background: #fff;
-  margin: 1rem;
-  flex: 1;
+  margin: 5rem 2rem;
+  flex: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,6 +211,7 @@ a img:hover {
 }
 .comp-logo img {
   max-width: 200px;
+  border-radius: 5px;
 }
 
 .comp-logo a {
@@ -206,4 +220,45 @@ a img:hover {
 
 .hidden {
   display: none;
+}
+
+/* Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #ccf6c8;
+}
+
+#contact .contact-info {
+  text-align: right;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+#contact p i {
+  margin-left: 2rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+footer p {
+  padding: 0.2rem;
+  font-size: 0.8rem;
 }

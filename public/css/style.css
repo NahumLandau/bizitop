@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela+Round&display=swap');
+
+:root {
+  --pink: #fa26a0;
+  --blue: #4ea8de;
+  --green: #2b9348;
+  --dark-orange: #ff5733;
+  --orange: #f77f00;
+  --light-gray: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+a.pink-link:hover,
+.pink {
+  color: var(--pink);
+}
+a.green-link:hover,
+.green {
+  color: var(--green);
+}
+a.dark-orange-link:hover,
+.dark-orange {
+  color: var(--dark-orange);
+}
+a.orange-link:hover,
+.orange {
+  color: var(--orange);
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.3rem;
+  background: var(--blue);
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+}
+.navbar img {
+  max-width: 200px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+/* Home */
+#home {
+  background: var(--light-gray);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#home h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7rem;
+  visibility: hidden;
+  margin-bottom: 1rem;
+}
+
+#home .top {
+  color: var(--blue);
+}
+
+#home p {
+  visibility: hidden;
+  font-size: 2rem;
+}
+
+#home .pink {
+  animation: animate1 1.5s forwards 0.5s ease-in;
+}
+#home .green {
+  animation: animate1 1.5s forwards 1s ease-in;
+}
+#home .dark-orange {
+  animation: animate1 1.5s forwards 1.5s ease-in;
+}
+#home .orange {
+  animation: animate1 1.5s forwards 2s ease-in;
+}
+
+#home .top {
+  animation: animate1 1.5s forwards 2.5s ease-in;
+}
+
+#home p {
+  margin-bottom: 2rem;
+  animation: animate1 2s forwards 3.5s ease-in;
+}
+#home .btn {
+  visibility: hidden;
+  animation: animate2 3s forwards 5s ease-in-out;
+}
+
+@keyframes animate1 {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes animate2 {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+/* About */
+#about {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Products */
+
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--blue);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company {
+  background: #fff;
+  margin: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a img:hover {
+  opacity: 0.5;
+}
+.comp-logo img {
+  max-width: 200px;
+}
+
+.comp-logo a {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}

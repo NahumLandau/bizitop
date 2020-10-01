@@ -62,7 +62,7 @@ a.orange-link:hover,
 }
 
 .btn:hover {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 .container {
@@ -127,29 +127,29 @@ a.orange-link:hover,
 }
 
 #home .pink {
-  animation: animate1 1.2s forwards 0.5s ease-in;
+  animation: animate1 1s forwards 0.5s ease-in;
 }
 #home .green {
-  animation: animate1 1.2s forwards 1s ease-in;
+  animation: animate1 1s forwards 1s ease-in;
 }
 #home .dark-orange {
-  animation: animate1 1.2s forwards 1.5s ease-in;
+  animation: animate1 1s forwards 1.5s ease-in;
 }
 #home .orange {
-  animation: animate1 1.2s forwards 2s ease-in;
+  animation: animate1 1s forwards 2s ease-in;
 }
 
 #home .top {
-  animation: animate1 1.2s forwards 2.5s ease-in;
+  animation: animate1 1s forwards 2.5s ease-in;
 }
 
 #home p {
   margin-bottom: 2rem;
-  animation: animate1 2s forwards 3.5s ease-in;
+  animation: animate1 1.5s forwards 3.5s ease-in;
 }
 #home .btn {
   visibility: hidden;
-  animation: animate2 3s forwards 5s ease-in-out;
+  animation: animate1 1.5s forwards 4.5s ease-in-out;
 }
 
 @keyframes animate1 {
@@ -163,15 +163,6 @@ a.orange-link:hover,
   }
 }
 
-@keyframes animate2 {
-  from {
-    visibility: hidden;
-  }
-  to {
-    visibility: visible;
-  }
-}
-
 /* About */
 #about {
   display: flex;
@@ -180,7 +171,7 @@ a.orange-link:hover,
   justify-content: center;
   text-align: center;
   padding: 3rem;
-  background: #ccf6c8;
+  background: var(--blue);
 }
 
 /* Products */
@@ -231,7 +222,7 @@ a img:hover {
   text-align: center;
   justify-content: center;
   padding: 3rem;
-  background: #ccf6c8;
+  background: #80bdab;
 }
 
 #contact .contact-info {
@@ -254,7 +245,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #fff;
+  background: #aacdbe;
   padding: 0.5rem;
 }
 

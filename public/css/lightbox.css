@@ -22,15 +22,13 @@ body.lb-disable-scrolling {
   line-height: 0;
   font-weight: normal;
   outline: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .lightbox .lb-image {
   display: block;
   height: auto;
+  max-width: inherit;
+  max-height: none;
   border-radius: 3px;
 
   /* Image border */
@@ -75,7 +73,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/close.png) no-repeat;
+  background: url(../img/loading.gif) no-repeat;
 }
 
 .lb-nav {

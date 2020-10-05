@@ -27,8 +27,8 @@
   top: 5%;
   z-index: 2;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   opacity: 0;
 }
 
@@ -130,11 +130,11 @@
 
 @keyframes menuanimation {
   0% {
-    top: -500px;
+    top: 0;
     visibility: hidden;
     opacity: 0;
   }
-  70% {
+  50% {
     visibility: hidden;
   }
   100% {

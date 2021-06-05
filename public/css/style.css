@@ -78,9 +78,10 @@ a.orange-link:hover,
   align-items: center;
   justify-content: space-around;
   z-index: 1;
+  height: 90px;
 }
 .navbar img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .navbar ul {
@@ -185,6 +186,13 @@ a.orange-link:hover,
   font-size: 1.1rem;
 }
 
+#about p b {
+  display: block;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
 /* Products */
 
 #products {
@@ -245,7 +253,7 @@ a img:hover {
   padding: 1rem;
 }
 #contact p i {
-  margin-left: 2rem;
+  margin-left: 10px;
 }
 
 /* Footer */
